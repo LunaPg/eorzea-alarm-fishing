@@ -1,0 +1,47 @@
+{
+  "name": "eorzea-alarm-fishing",
+  "version": "0.0.1",
+  "description": "Alarm clock for fishing spot",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LunaPg/eorzea-alarm-fishing.git"
+  },
+  "keywords": [
+    "ff14",
+    "eorzea",
+    "fishing",
+    "time",
+    "weather"
+  ],
+  "author": "lunaPg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LunaPg/eorzea-alarm-fishing/issues"
+  },
+  "homepage": "https://github.com/LunaPg/eorzea-alarm-fishing#readme",
+  "dependencies": {
+    "@xivapi/js": "^0.3.3",
+    "eorzea-time": "^3.0.0",
+    "eorzea-weather": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/faker": "^5.5.9",
+    "@types/node": "^16.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.4.0",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-typescript": "^0.14.0",
+    "faker": "^5.5.3",
+    "jest": "^27.4.3",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.2"
+  }
+}
