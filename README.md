@@ -9,3 +9,13 @@ If you want to contribute another way like setting up the project, create gihub 
 
 It's just ... you can't write unit test for those, right :D 
 
+
+# Hacktoberfest
+You're here for the hacktober fest ??
+
+Check their awesome tutorial video !
+https://hacktoberfest.com/participation/
+
+If you don't like video, check their website !
+https://hacktoberfest.com/participation/
+
