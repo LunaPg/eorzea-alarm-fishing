@@ -1,23 +1,24 @@
+import EorzeaTime from "eorzea-time";
+
 export class Fish {
-  private name: string;
-  private EZTime: number;
-  private IRLTime: number;
+  public name: string;
+  public EZTime: EorzeaTime | null;
+  public IRLTime: Date | null = null;
+  public icon: string;
+  public id: number;
+  public fishingSpotId: number;
 
-  constructor(name: string, EZTime: number, IRLTime: number) {
+  constructor(name: string, IRLTime: number, id: number, icon: string, fishingSpotId: number) {
     this.name = name;
-    this.EZTime = EZTime;
-    this.IRLTime = IRLTime;
+    this.IRLTime = new Date(IRLTime);
+    this.EZTime = this.getEZTime();
+    this.icon = icon;
+    this.id = id;
+    this.fishingSpotId = fishingSpotId;
   }
 
-  public getName(): string {
-    return this.name;
+  private getEZTime(){
+    return this.IRLTime == null ?  null : new EorzeaTime(this.IRLTime);
   }
 
-  public getEZTime(): number {
-    return this.EZTime;
-  }
-
-  public getIRLTime(): number {
-    return this.IRLTime;
-  }
 }
