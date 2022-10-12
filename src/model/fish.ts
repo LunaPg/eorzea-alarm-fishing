@@ -20,4 +20,9 @@ export class Fish {
   public getIRLTime(): number {
     return this.IRLTime;
   }
+
+  public changeName(name: string): void {
+    this.name = name;
+  }
+  
 }
