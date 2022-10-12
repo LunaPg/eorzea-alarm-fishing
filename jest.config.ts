@@ -9,7 +9,23 @@ module.exports = {
     ],
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "./src/**"
+      "<rootDir>/src/**/*.ts",
+      "<rootDir>/!lib/*",
+    ],
+    coveragePathIgnorePatterns : [
+       "<rootDir>/node_modules/", 
+       "<rootDir>/lib/" 
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ],
+        "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
     ],
     "coverageThreshold": {
       "global": {
