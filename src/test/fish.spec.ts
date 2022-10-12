@@ -16,4 +16,23 @@ describe('fish', () => {
 
     expect(fishCollection.get(fish)).toBe(undefined);
   });
+
+  it('should update name', () => {
+    const fishCollection = new FishCollection();
+    const fish = new Fish("pantyFish", 1234, 1434);
+    fishCollection.addFish(fish);
+    const expectedName = "pantyFish2";
+    fishCollection.updateName(fish, expectedName);
+
+    expect(fishCollection.get(fish)?.getName()).toBe(expectedName );
+  });
+
+  it('should fails to update name', () => {
+    const fishCollection = new FishCollection();
+    const fish = new Fish("pantyFish", 1234, 1434);
+    const expectedName = "pantyFish2";
+    fishCollection.updateName(fish, expectedName);
+
+    expect(fishCollection.get(fish)?.getName()).toBe(undefined);
+  });
 })
