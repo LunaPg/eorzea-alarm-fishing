@@ -18,4 +18,12 @@ export class FishCollection {
   public get(fish: Fish) {
     return this.fishColletion.find((f) => f.getName() === fish.getName());
   }
+
+  public updateName(fish: Fish, name: string) {
+    const fishToUpdate = this.get(fish);
+    if (fishToUpdate) {
+      fishToUpdate.changeName(name);
+    }
+  }
+
 }
