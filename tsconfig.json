@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "./lib",
+    "outDir": "lib",
     "lib": ["esnext", "esnext.array"],
     "types": ["jest", "node"],
-    "target": "es2017",
+    "target": "es6",
     "module": "commonjs",
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -19,5 +19,5 @@
     "downlevelIteration": true
   },
   "include": ["."],
-  "exclude": ["node_modules", "src/test", "lib"]
+  "exclude": ["node_modules", "src/__tests__", "lib"]
 }
